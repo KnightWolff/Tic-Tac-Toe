@@ -27,8 +27,9 @@ public class Board {
             Mark = "G";
         }
         int Row, Column;
-        Row = (Position-1)/3;
         Column = (Position-1)%3;
+        Row = ((-Position + Column +7)/3) ;
+
 
         Board[Row][Column] = Mark;
         return Board;
